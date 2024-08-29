@@ -14,6 +14,7 @@ import { BookinfoComponent } from './bookinfo/bookinfo.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ReserveFormComponent } from './reserve-form/reserve-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ReserveFormComponent } from './reserve-form/reserve-form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
