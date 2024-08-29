@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { BookinfoComponent } from './bookinfo/bookinfo.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ReserveFormComponent } from './reserve-form/reserve-form.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     LocationsComponent,
     HeaderComponent,
     BookinfoComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    ReserveFormComponent
   ],
   imports: [
     BrowserModule,
