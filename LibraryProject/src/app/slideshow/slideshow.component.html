@@ -1,8 +1,10 @@
-<!-- <div class="slideshow-container">
-    <img src="/assets/9780385544276_p0_v3_s600x595.jpg">
-    <img src="/assets/9780593802564_p0_v4_s600x595.jpg">
-    <img src="/assets/9781668016138_p0_v3_s600x595.jpg">
+<div *ngIf="images && images.length>0"   class="slideshow-container">
+    <img *ngFor="let image of images; let i=index" [src]="image.imageSrc"  [ngClass]="{'image-active':currentIndex===i}">
+<div *ngIf="indicators" class="slideshow-dot">
+    <span *ngFor="let dot of images; let i=index" class="dot"
+    [ngClass]="{'active':currentIndex===i}" (click)="selectedImage(i)"
+    >
+
+    </span>
 </div>
-<div class="buttons">
-    <span  (click)="selectImage()"></span>
-</div> -->
+</div>
