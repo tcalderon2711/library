@@ -9,6 +9,8 @@ import { EventsComponent } from './events/events.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LocationsComponent } from './locations/locations.component';
 import { HeaderComponent } from './header/header.component';
+
+import { BookinfoComponent } from './bookinfo/bookinfo.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
@@ -21,6 +23,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AboutUsComponent,
     LocationsComponent,
     HeaderComponent,
+    BookinfoComponent,
     SlideshowComponent
   ],
   imports: [

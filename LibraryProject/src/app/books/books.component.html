@@ -1,10 +1,9 @@
 <app-header></app-header>
 <h1>{{ title }}</h1>
-<p>Books work!</p>
  
 <div *ngIf="data">
   <div class="book-container">
-    <div class="book-item" *ngFor="let book of data">
+    <div class="book-item" *ngFor="let book of data" (click)="viewBook(book.bookName)" style="cursor: pointer;">
       <img class="book-image" [src]="book.imagePath" alt="{{ book.bookName }} image" />
       <div class="book-details">
         <h2 class="book-title">{{ book.bookName }}</h2>
