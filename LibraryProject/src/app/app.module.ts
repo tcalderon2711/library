@@ -10,6 +10,7 @@ import { EventsComponent } from './events/events.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LocationsComponent } from './locations/locations.component';
 import { HeaderComponent } from './header/header.component';
+import { BookinfoComponent } from './bookinfo/bookinfo.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HeaderComponent } from './header/header.component';
     AboutUsComponent,
     LocationsComponent,
     HeaderComponent,
+    BookinfoComponent,
   ],
   imports: [
     BrowserModule,
