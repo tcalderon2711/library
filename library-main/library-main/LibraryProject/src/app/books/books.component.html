@@ -1,0 +1,16 @@
+<app-header></app-header>
+<h1>{{ title }}</h1>
+<p>Books works!</p>
+
+<div *ngIf="data">
+  <ul>
+    <li *ngFor="let book of data">
+      <h2>{{ book.bookName }}</h2>
+      <p><strong>Author:</strong> {{ book.author }}</p>
+      <p><strong>Description:</strong> {{ book.description }}</p>
+      <p><strong>Year Published:</strong> {{ book.yearPublished }}</p>
+      <img [src]="book.imagePath" alt="{{ book.bookName }} image" />
+    </li>
+  </ul>
+</div>
+
