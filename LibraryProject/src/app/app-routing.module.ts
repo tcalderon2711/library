@@ -6,6 +6,7 @@ import { EventsComponent } from './events/events.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LocationsComponent } from './locations/locations.component';
 import { BookinfoComponent } from './bookinfo/bookinfo.component';
+import { ReserveFormComponent } from './reserve-form/reserve-form.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'locations', component: LocationsComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'bookinfo/:bookName', component: BookinfoComponent },
+  {path:'reserve-form',component:ReserveFormComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
