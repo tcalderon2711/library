@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'events', component: EventsComponent },
   { path: 'locations', component: LocationsComponent },
   { path: 'about-us', component: AboutUsComponent },
-  { path: 'bookinfo/:bookName', component: BookinfoComponent }, // Parameterized route
+  { path: 'bookinfo/:bookName', component: BookinfoComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
