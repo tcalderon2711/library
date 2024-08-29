@@ -1,0 +1,10 @@
+<div *ngIf="images && images.length>0"   class="slideshow-container">
+    <img *ngFor="let image of images; let i=index" [src]="image.imageSrc"  [ngClass]="{'image-active':currentIndex===i}">
+<div *ngIf="indicators" class="slideshow-dot">
+    <span *ngFor="let dot of images; let i=index" class="dot"
+    [ngClass]="{'active':currentIndex===i}" (click)="selectedImage(i)"
+    >
+
+    </span>
+</div>
+</div>

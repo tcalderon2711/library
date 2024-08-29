@@ -1,21 +1,49 @@
 .header{
     background-color: grey;
+    display: flex;
+    // align-items: flex-end;
+    justify-content: space-between;
+    height:120px;
 }
 ul{
     list-style-type:none;
     margin:0;
     padding:0;
+    display: flex;
+    // align-items: flex-end;
 }
 li{
     display:inline-block;
-    padding:30px 16px;
+    padding:35px;
     color:white;
     text-align:center;
     text-decoration: none;
     background-color: black;
+    font-size:30px;
 
 }
 
 li:hover{
     background-color:darkblue;
+}
+
+.nameLogo img{
+    width: 150px;
+    height: auto;
+    padding:0;
+    margin:0;
+    vertical-align: bottom;
+}
+
+.nameLogo h1{
+    margin: 0;
+    vertical-align: bottom;
+    line-height: 1;
+}
+.nameLogo{
+    text-align: left;
+    padding-top:10px;
+    padding-left: 20px;
+    display:flex;
+    align-items:center;
 }

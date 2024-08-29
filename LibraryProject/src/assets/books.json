@@ -1,0 +1,107 @@
+[
+    {
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "description": "A romantic novel that explores the manners and matrimonial machinations among the British gentry of the early 19th century.",
+        "imagePath": "/assets/pride.jpg",
+        "yearPublished": 1813
+    },
+    {
+        "bookName": "Moby-Dick",
+        "author": "Herman Melville",
+        "description": "The saga of Captain Ahab's obsessive quest to kill the great white whale, Moby Dick.",
+        "imagePath": "/assets/moby.jpg",
+        "yearPublished": 1851
+    },
+    {
+        "bookName": "1984",
+        "author": "George Orwell",
+        "description": "A dystopian novel set in a totalitarian society ruled by Big Brother.",
+        "imagePath": "/assets/1984.jpg",
+        "yearPublished": 1949
+    },
+    {
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "description": "A novel that deals with serious issues like racial inequality and rape through the eyes of young Scout Finch.",
+        "imagePath": "/assets/mockingbird.jpg",
+        "yearPublished": 1960
+    },
+    {
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "description": "A novel about the American dream and the downfall of those who attempt to reach its illusory goals.",
+        "imagePath": "/assets/gatsby.jpg",
+        "yearPublished": 1925
+    },
+    {
+        "bookName": "War and Peace",
+        "author": "Leo Tolstoy",
+        "description": "A sprawling epic that tells the story of five families against the backdrop of the Napoleonic Wars.",
+        "imagePath": "/assets/war.jpg",
+        "yearPublished": 1869
+    },
+    {
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "description": "A novel about teenage rebellion and alienation, told through the eyes of the disaffected Holden Caulfield.",
+        "imagePath": "/assets/catcher.jpg",
+        "yearPublished": 1951
+    },
+    {
+        "bookName": "Jane Eyre",
+        "author": "Charlotte Brontë",
+        "description": "A novel that follows the experiences of its eponymous heroine, including her growth to adulthood and her love for Mr. Rochester.",
+        "imagePath": "/assets/jane.jpg",
+        "yearPublished": 1847
+    },
+    {
+        "bookName": "Crime and Punishment",
+        "author": "Fyodor Dostoevsky",
+        "description": "A psychological drama that delves into the mind of Raskolnikov, a man who believes he is above morality.",
+        "imagePath": "/assets/crime.jpg",
+        "yearPublished": 1866
+    },
+    {
+        "bookName": "The Odyssey",
+        "author": "Homer",
+        "description": "An epic poem that follows the adventures of Odysseus as he tries to return home after the Trojan War.",
+        "imagePath": "/assets/odyssey.jpg",
+        "yearPublished": "circa 8th century BC"
+    },
+    {
+        "bookName": "The Brothers Karamazov",
+        "author": "Fyodor Dostoevsky",
+        "description": "A philosophical novel that explores the moral struggles and existential dilemmas of its characters.",
+        "imagePath": "/assets/brothers.jpg",
+        "yearPublished": 1880
+    },
+    {
+        "bookName": "Brave New World",
+        "author": "Aldous Huxley",
+        "description": "A dystopian novel that examines a futuristic society driven by technological advancements and state control.",
+        "imagePath": "/assets/brave.jpg",
+        "yearPublished": 1932
+    },
+    {
+        "bookName": "Wuthering Heights",
+        "author": "Emily Brontë",
+        "description": "A tale of passion and revenge, set on the bleak Yorkshire moors.",
+        "imagePath": "/assets/wuthering.jpg",
+        "yearPublished": 1847
+    },
+    {
+        "bookName": "Don Quixote",
+        "author": "Miguel De Cervantes",
+        "description": "A novel that follows the adventures of a nobleman who believes he is a knight, and his faithful squire, Sancho Panza.",
+        "imagePath": "/assets/don.jpg",
+        "yearPublished": 1605
+    },
+    {
+        "bookName": "Frankenstein",
+        "author": "Mary Shelley",
+        "description": "A Gothic novel that tells the story of a scientist who creates a monster, only to be horrified by the consequences.",
+        "imagePath": "/assets/frank.jpg",
+        "yearPublished": 1818
+    }
+]

@@ -1,0 +1,11 @@
+<app-header></app-header>
+<div *ngIf="book">
+    <button class="go-back-button" (click)="goBack()">Go back</button>
+    <h2 class="book-title">{{ book.bookName }}</h2>
+    <p class="book-author">By {{ book.author }}</p>
+    <p class="book-description">{{ book.description }}</p>
+    <p class="book-year"><strong>Year Published:</strong> {{ book.yearPublished }}</p>
+    <button [routerLink]="['/reserve-form']">Reserve</button><br>
+    <img class="book-image" [src]="book.imagePath" alt="{{ book.bookName }} image" />
+  </div>
+  

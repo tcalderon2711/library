@@ -10,6 +10,12 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { LocationsComponent } from './locations/locations.component';
 import { HeaderComponent } from './header/header.component';
 
+import { BookinfoComponent } from './bookinfo/bookinfo.component';
+import { SlideshowComponent } from './slideshow/slideshow.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ReserveFormComponent } from './reserve-form/reserve-form.component';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +24,16 @@ import { HeaderComponent } from './header/header.component';
     EventsComponent,
     AboutUsComponent,
     LocationsComponent,
-    HeaderComponent
+    HeaderComponent,
+    BookinfoComponent,
+    SlideshowComponent,
+    ReserveFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
