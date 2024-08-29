@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,8 +10,6 @@ import { EventsComponent } from './events/events.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LocationsComponent } from './locations/locations.component';
 import { HeaderComponent } from './header/header.component';
-import { SlideshowComponent } from './slideshow/slideshow.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,11 +20,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AboutUsComponent,
     LocationsComponent,
     HeaderComponent,
-    SlideshowComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     HttpClientModule
   ],
   providers: [],

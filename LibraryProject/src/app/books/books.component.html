@@ -1,15 +1,17 @@
 <app-header></app-header>
 <h1>{{ title }}</h1>
-<p>Books works!</p>
+<p>Books work!</p>
  
 <div *ngIf="data">
-  <ul>
-    <li *ngFor="let book of data">
-      <h2>{{ book.bookName }}</h2>
-      <p><strong>Author:</strong> {{ book.author }}</p>
-      <p><strong>Description:</strong> {{ book.description }}</p>
-      <p><strong>Year Published:</strong> {{ book.yearPublished }}</p>
-      <img [src]="book.imagePath" alt="{{ book.bookName }} image" />
-    </li>
-  </ul>
+  <div class="book-container">
+    <div class="book-item" *ngFor="let book of data">
+      <img class="book-image" [src]="book.imagePath" alt="{{ book.bookName }} image" />
+      <div class="book-details">
+        <h2 class="book-title">{{ book.bookName }}</h2>
+        <p class="book-author">By {{ book.author }}</p>
+        <p class="book-description">{{ book.description }}</p>
+        <p class="book-year"><strong>Year Published:</strong> {{ book.yearPublished }}</p>
+      </div>
+    </div>
+  </div>
 </div>
