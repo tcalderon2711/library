@@ -1,51 +1,106 @@
-.events-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+$primary-color: #FF5722; // Orange
+$secondary-color: #4CAF50; // Green
+$text-color: #333; // Dark grey
+$background-color: #F5F5F5; // Light grey
+$event-background: #FFFFFF; // White for event blocks
+$event-hover: #f0f0f0; // Light grey for hover
+$border-color: #E0E0E0; // Light border
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: $primary-color;
+  padding: 20px 0;
+  text-align: center;
+
+  h1 {
+    color: white;
+    margin: 0;
+    font-size: 2.5rem;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+  h2 {
+    color: $primary-color;
+    font-size: 2rem;
     text-align: center;
+    margin-bottom: 30px;
+  }
 }
- 
-.events-page h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #444;
-}
- 
+
 .event-list {
-    list-style-type: none;
-    padding: 0;
-    max-width: 600px;
-    width: 100%;
-}
- 
-.event-list li {
-    background-color: #f9f9f9;
-    margin-bottom: 15px;
-    padding: 20px;
+  list-style: none;
+  padding: 0;
+
+  li {
+    background-color: $event-background;
+    border: 1px solid $border-color;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      background-color: $event-hover;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+      color: $secondary-color;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: $text-color;
+      margin-bottom: 5px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
- 
-.event-list li:hover {
-    background-color: #f0f0f0;
+
+footer {
+  background-color: $primary-color;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  margin-top: 40px;
+
+  p {
+    margin: 0;
+  }
 }
- 
-.event-list h3 {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
-}
- 
-.event-list p {
-    font-size: 1em;
-    line-height: 1.6;
-}
-.background{
-    background-image:url("/assets/91675.jpg");
-    background-size: cover;
-    background-position: no-repeat;
-    height: 100vh;
-    width:100%;
-    position: relative;
+
+@media (min-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
 }
