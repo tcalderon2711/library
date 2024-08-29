@@ -9,6 +9,8 @@ import { EventsComponent } from './events/events.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LocationsComponent } from './locations/locations.component';
 import { HeaderComponent } from './header/header.component';
+import { SlideshowComponent } from './slideshow/slideshow.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { HeaderComponent } from './header/header.component';
     EventsComponent,
     AboutUsComponent,
     LocationsComponent,
-    HeaderComponent
+    HeaderComponent,
+    SlideshowComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
